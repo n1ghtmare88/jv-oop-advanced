@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 public class Circle extends Figure {
     private final double radius;
 
@@ -14,7 +15,7 @@ public class Circle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: circle,"
+        System.out.println("Figure: Circle,"
                 + " area: " + area()
                 + ", color: " + getColor()
                 + ", radius: " + radius);
