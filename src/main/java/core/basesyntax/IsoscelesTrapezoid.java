@@ -14,7 +14,7 @@ public class IsoscelesTrapezoid extends Figure {
 
     @Override
     public double area() {
-        return 0.5 * (baseA + baseB) * height;
+        return HALF * (baseA + baseB) * height;
     }
 
     @Override
@@ -25,6 +25,5 @@ public class IsoscelesTrapezoid extends Figure {
                 + ", baseA: " + baseA
                 + ", baseB: " + baseB
                 + ", height: " + height);
-
     }
 }

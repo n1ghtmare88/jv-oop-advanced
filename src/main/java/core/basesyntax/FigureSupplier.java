@@ -3,15 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class FigureSupplier {
-    private final Random random;
-    private final Figure defaultFigure;
-    private final ColorSupplier colorSupplier;
-
-    {
-        random = new Random();
-        defaultFigure = new Circle(Color.WHITE.name(),10);
-        colorSupplier = new ColorSupplier();
-    }
+    private final Random random = new Random();
+    private final Figure defaultFigure = new Circle(Color.WHITE.name(),10);
+    private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Figure getRandomFigure() {
         int index = random.nextInt(5);
